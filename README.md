@@ -27,24 +27,37 @@ This week focuses on MongoDB fundamentals including:
 - CRUD operations (Create, Read, Update, Delete)
 - MongoDB queries and filters
 - Aggregation pipelines
-- Indexing for performance
-
 ## Submission
 
 Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
 
-## Getting Started
+## Running the Scripts
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+### 1. Populate the Database
+
+First, you need to populate your local MongoDB database with the sample book data. Make sure your MongoDB server is running, then execute the following command in your terminal:
+
+```bash
+node insert_books.js
+```
+
+This script will connect to `mongodb://localhost:27017`, create a database named `plp_bookstore`, and insert the sample books into a `books` collection.
+
+### 2. Execute the Queries
+
+After populating the database, you can run the `queries.js` script to perform various operations as required by the assignment.
+
+```bash
+node queries.js
+```
+
+This will execute all the basic, advanced, and aggregation queries, and create indexes on the collection. The output for each task will be printed to the console.
 
 ## Files Included
 
 - `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+- `insert_books.js`: Script to populate your MongoDB database with sample book data.
+- `queries.js`: Script containing all MongoDB queries for the assignment tasks.
 
 ## Requirements
 
